@@ -70,6 +70,7 @@ section{
 .btn i {
     padding: 0 .5rem;
     font-size: 1.8rem;
+    /* transition: background-color 2.0s ease, box-shadow 2.0s ease; */
 }
 
 .btn:hover{
@@ -82,7 +83,7 @@ section{
     margin: 0 6rem;
     font-size: 4rem;
     padding: 1rem;
-    border-bottom: .1rem solid #fff4;
+    border-bottom: .1rem solid #fff;
     color: black;
 }
 
@@ -294,6 +295,95 @@ header .navbar ul li a:hover{
     background: var(--darkShadow);
 
 }
+
+/* footer section */
+
+footer {
+    /* background: --; */
+    height: auto;
+    /* width: 1; */
+    font-family: "Open Sans";
+    padding-top: 100px;
+    color: #111;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    padding-top: 40px;
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #111;
+    padding-bottom: 20px;
+}
+
+.socials a i {
+    font-size: 2.3rem;
+    /* transition: font-size .2s ease; */
+}
+
+.socials a:hover i {
+    font-size: 3.0rem;
+    padding-bottom: -10px;
+}
+
+.footer-bottom {
+    width: 100vw;
+    padding-bottom: 20px;
+    /* text-align: center; */
+    /* position: fixed; */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
 
 
 
