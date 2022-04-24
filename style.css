@@ -4,6 +4,7 @@
     --purple:#336699;
     --darkOrange1: #ff880070;
     --darkOrange: #ffa05299;
+    --darkProjects: #ff893bab;
     --shadowOrange: #fff0d980;
     --lightOrange2: #ffdab9;
     --lightOrange1: #fdad5c;
@@ -100,6 +101,7 @@ header {
     width: 32rem;
     margin: 2rem;
     background: linear-gradient(to bottom right, var(--lightOrange2), var(--lightOrange1));
+    border: 3px solid peachpuff;
     box-shadow: 5px 5px 10px var(--darkOrange), -5px -5px 10px var(--shadowOrange);
     display: flex;
     align-items: center;
@@ -432,7 +434,7 @@ footer {
     overflow: hidden;
     border: 3px solid peachpuff;
     border-radius: 12px;
-    box-shadow: 10px 10px 15px var(--darkOrange), -10px -10px 17px var(--shadowOrange);
+    box-shadow: 10px 10px 15px var(--darkProjects), -10px -10px 17px var(--shadowOrange);
     position: relative;
 }
 
