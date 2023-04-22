@@ -2,14 +2,15 @@
 
 :root {
     --purple: #00f81d;
-    --darkOrange1: #00ff1e;
-    --darkOrange: #001b02;
-    --darkProjects: #282828;
-    --shadowOrange: #38bb00d9;
-    --lightOrange2: #002504;
-    --lightOrange1: #98d900;
+    --positiveShadow1: #00ff1e;
+    --positiveShadow: #001b02;
+    --positiveProjectShadow: #282828;
+    --negativeShadow: #38bb00d9;
+    --topLeftBG: #002504;
+    --bottomRightBG: #98d900;
     --darkShadow: #88ff00;
     --border: rgba(47, 255, 0, 0.742);
+    --headerImage: url('bg_2.png');
 }
 
 * {
@@ -26,7 +27,7 @@
 
 *::selection {
     background: var(--darkShadow);
-    color: var(--lightOrange2);
+    color: var(--topLeftBG);
 }
 
 html {
@@ -39,16 +40,16 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background: var(--lightOrange2);
+    background: var(--topLeftBG);
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--lightOrange1);
+    background: var(--bottomRightBG);
 }
 
 body {
-    background: var(--lightOrange2);
-    background-image: linear-gradient(to bottom right, var(--lightOrange2), var(--lightOrange1));
+    background: var(--topLeftBG);
+    background-image: linear-gradient(to bottom right, var(--topLeftBG), var(--bottomRightBG));
     /* background-image: url('bg_2.png'); */
     overflow-x: hidden;
     padding-left: 35rem;
@@ -63,7 +64,7 @@ section{
     padding: .7rem 3rem;
     background: none;
     color: white;
-    box-shadow: 5px 5px 10px var(--darkOrange), -5px -5px 12px var(--shadowOrange);
+    box-shadow: 5px 5px 10px var(--positiveShadow), -5px -5px 12px var(--negativeShadow);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -78,7 +79,7 @@ section{
 
 .btn:hover{
     background-color: none;
-    box-shadow: 5px 5px 10px var(--darkOrange) inset, -5px -5px 12px var(--shadowOrange) inset;
+    box-shadow: 5px 5px 10px var(--positiveShadow) inset, -5px -5px 12px var(--negativeShadow) inset;
 }
 
 .heading {
@@ -102,9 +103,9 @@ header {
     height: 95%;
     width: 32rem;
     margin: 2rem;
-    background: linear-gradient(to bottom right, var(--lightOrange2), var(--lightOrange1));
+    background: linear-gradient(to bottom right, var(--topLeftBG), var(--bottomRightBG));
     border: 3px solid var(--border);
-    box-shadow: 5px 5px 10px var(--darkOrange), -5px -5px 10px var(--shadowOrange);
+    box-shadow: 5px 5px 10px var(--positiveShadow), -5px -5px 10px var(--negativeShadow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,19 +153,19 @@ header .navbar ul li a {
 }
 
 header {
-    background-image: url('bg_2.png');
+    background-image: var(--headerImage);
 }
 
 header .navbar ul li a:hover{
     color: white;
-    box-shadow: 5px 5px 10px var(--darkOrange) inset, -5px -5px 10px var(--shadowOrange) inset;
+    box-shadow: 5px 5px 10px var(--positiveShadow) inset, -5px -5px 10px var(--negativeShadow) inset;
 }
 
 #menu {
     position: fixed;
     top: 2rem;
     right: 2rem;
-    background: var(--lightOrange2);
+    background: var(--topLeftBG);
     color: white;
     cursor: pointer;
     font-size: 2.5rem;
@@ -236,7 +237,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box {
     width: 20rem;
-    background: var(--lightOrange2);
+    background: var(--topLeftBG);
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -271,7 +272,7 @@ header .navbar ul li a:hover{
 
 .education .box-container .box span {
     font-size: 1.3rem;
-    background: var(--lightOrange2);
+    background: var(--topLeftBG);
     color: white;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
@@ -312,7 +313,7 @@ footer {
     /* width: 1; */
     font-family: "Open Sans";
     padding-top: 100px;
-    color: #111;
+    color: #eee;
 }
 
 .footer-content {
@@ -352,7 +353,7 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: #111;
+    color: #eee;
     padding-bottom: 20px;
 }
 
@@ -420,7 +421,7 @@ footer {
     flex: 1;
     margin-left: -150px;
     /* background-color: var(--body-bg); */
-    background-image: linear-gradient(to bottom right, var(--lightOrange2), var(--lightOrange1));
+    background-image: linear-gradient(to bottom right, var(--topLeftBG), var(--bottomRightBG));
     padding: 5rem 2rem;
     border-radius: 12px;
     box-shadow: 0px 0px 20px #00000028;
@@ -441,7 +442,7 @@ footer {
     overflow: hidden;
     border: 3px solid var(--border);
     border-radius: 12px;
-    box-shadow: 10px 10px 15px var(--darkProjects), -10px -10px 17px var(--shadowOrange);
+    box-shadow: 10px 10px 15px var(--positiveProjectShadow), -10px -10px 17px var(--negativeShadow);
     position: relative;
 }
 
@@ -597,4 +598,22 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
     } */
+}
+
+.color-scheme-selector {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#color-scheme {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
