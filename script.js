@@ -75,3 +75,48 @@ colorSchemeSelect.addEventListener('change', (e) => {
     }
 });
 
+const points = [
+    "Welcome to my personal portfolio website.",
+    "I am a highly motivated and dedicated programmer with over 4 years of experience.",
+    "My passion for technology and continuous learning has led me to utilize diverse frameworks in order to build innovative solutions.",
+    "I specialize in Python and proficient in various other programming languages.",
+    "I view challenges as opportunities to expand my knowledge and enhance my skills in computer science.",
+    "Here, you can explore my projects and learn more about my programming journey."
+];
+
+let currentIndex = 0;
+let currentCharIndex = 0;
+let isDeleting = false;
+
+const typingText = document.querySelector('.typing-text');
+
+function type() {
+if (isDeleting) {
+    if (currentCharIndex > 0) {
+    currentCharIndex--;
+    typingText.textContent = points[currentIndex].substr(0, currentCharIndex);
+    } else {
+    isDeleting = false;
+    }
+} else {
+    if (currentCharIndex < points[currentIndex].length) {
+    currentCharIndex++;
+    typingText.textContent = points[currentIndex].substr(0, currentCharIndex);
+    } else {
+    setTimeout(() => {
+        isDeleting = true;
+    }, 2000);
+    }
+}
+
+setTimeout(() => {
+    type();
+}, isDeleting ? 10 : 40);
+
+if (isDeleting && currentCharIndex === 0) {
+    currentIndex = (currentIndex + 1) % points.length;
+}
+}
+
+type();
+  

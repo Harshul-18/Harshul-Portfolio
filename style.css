@@ -105,6 +105,7 @@ header {
     margin: 2rem;
     background: linear-gradient(to bottom right, var(--topLeftBG), var(--bottomRightBG));
     border: 3px solid var(--border);
+    border-radius: 10px;
     box-shadow: 5px 5px 10px var(--positiveShadow), -5px -5px 10px var(--negativeShadow);
     display: flex;
     align-items: center;
@@ -620,3 +621,28 @@ footer {
     margin: 0;
     background-color: var(--darkShadow);
 }
+  
+  .typing-container {
+    display: flex;
+    color: white;
+    font-size: large;
+    max-width: 80%;
+  }
+  
+  .typing-text {
+    /* white-space: nowrap;
+    overflow: hidden; */
+  }
+  
+  .cursor {
+    width: 2px;
+    height: 1em;
+    background-color: black;
+    animation: blink .02s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { 
+      background-color: transparent 
+    } 
+  }  
