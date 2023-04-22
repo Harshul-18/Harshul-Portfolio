@@ -16,16 +16,16 @@ const colorSchemeSelect = document.getElementById('color-scheme');
 
 const colorSchemes = {
     default: {
-        "--purple": "#00f81d",
-        "--positiveShadow1": "#00ff1e",
-        "--positiveShadow": "#001b02",
-        "--positiveProjectShadow": "#282828",
-        "--negativeShadow": "#38bb00d9",
-        "--topLeftBG": "#002504",
-        "--bottomRightBG": "#98d900",
-        "--darkShadow": "#88ff00",
-        "--border": "rgba(47, 255, 0, 0.742)",
-        "--headerImage": "url('bg_2.png')"
+        "--purple": "#00580a",
+        "--positiveShadow1": "#4000ff",
+        "--positiveShadow": "#000000d9",
+        "--positiveProjectShadow": "#000000d9",
+        "--negativeShadow": "#de0059be",
+        "--topLeftBG": "#330000",
+        "--bottomRightBG": "#d20043",
+        "--darkShadow": "#ffb744",
+        "--border": "rgb(255, 0, 55)",
+        "--headerImage": "url('bg_4.png')",
     },
     scheme1: {
         "--purple": "#00580a",
@@ -40,16 +40,16 @@ const colorSchemes = {
         "--headerImage": "url('bg_3.png')",
     },
     scheme2: {
-        "--purple": "#00580a",
-        "--positiveShadow1": "#4000ff",
-        "--positiveShadow": "#000000d9",
-        "--positiveProjectShadow": "#000000d9",
-        "--negativeShadow": "#de0059be",
-        "--topLeftBG": "#330000",
-        "--bottomRightBG": "#d20043",
-        "--darkShadow": "#ffb744",
-        "--border": "rgb(255, 0, 55)",
-        "--headerImage": "url('bg_4.png')",
+        "--purple": "#00f81d",
+        "--positiveShadow1": "#00ff1e",
+        "--positiveShadow": "#001b02",
+        "--positiveProjectShadow": "#282828",
+        "--negativeShadow": "#38bb00d9",
+        "--topLeftBG": "#002504",
+        "--bottomRightBG": "#98d900",
+        "--darkShadow": "#88ff00",
+        "--border": "rgba(47, 255, 0, 0.742)",
+        "--headerImage": "url('bg_2.png')"
     },
     scheme3: {
         "--purple": "#00580a",
