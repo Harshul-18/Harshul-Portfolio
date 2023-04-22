@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
 :root {
-    --purple:#336699;
-    --darkOrange1: #ff880070;
-    --darkOrange: #ffa05299;
-    --darkProjects: #ff893bab;
-    --shadowOrange: #fff0d980;
-    --lightOrange2: #ffdab9;
-    --lightOrange1: #fdad5c;
-    --darkShadow: #fa733c;
+    --purple: #6C5B7B;
+    --darkOrange1: #C06C84;
+    --darkOrange: #D98B76;
+    --darkProjects: #8F4B4F;
+    --shadowOrange: #C7B198;
+    --lightOrange2: #EDE7E3;
+    --lightOrange1: #F2CC8F;
+    --darkShadow: #4B3832;
 }
 
 * {
