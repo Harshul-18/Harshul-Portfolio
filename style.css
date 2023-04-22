@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 
 :root {
-    --purple: #00f81d;
-    --positiveShadow1: #00ff1e;
-    --positiveShadow: #001b02;
-    --positiveProjectShadow: #282828;
-    --negativeShadow: #38bb00d9;
-    --topLeftBG: #002504;
-    --bottomRightBG: #98d900;
-    --darkShadow: #88ff00;
-    --border: rgba(47, 255, 0, 0.742);
-    --headerImage: url('bg_2.png');
+    --purple: #00580a;
+    --positiveShadow1: #4000ff;
+    --positiveShadow: #0000009f;
+    --positiveProjectShadow: #0000009f;
+    --negativeShadow: #0040ffbe;
+    --topLeftBG: #090033;
+    --bottomRightBG: #1363d3;
+    --darkShadow: #009dff;
+    --border: rgb(0, 102, 255);
+    --headerImage: url('bg_3.png');
 }
 
 * {
