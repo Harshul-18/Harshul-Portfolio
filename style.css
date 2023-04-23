@@ -60,6 +60,12 @@ section{
     padding:1rem;
 }
 
+/* section.home section.about section.education {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+} */
+
 .btn {
     padding: .7rem 3rem;
     border:rgb(0, 0, 0);
@@ -164,7 +170,10 @@ header {
 
 header .navbar ul li a:hover{
     color: rgba(255, 255, 255, 0.7);
-    box-shadow: 5px 5px 20px var(--positiveShadow) inset, -5px -5px 10px var(--negativeShadow) inset;
+    box-shadow: 5px 5px 20px var(--positiveShadow) inset, 
+                -5px -5px 10px var(--negativeShadow) inset,
+                1px 3px 4px var(--negativeShadow), 
+                -1px -3px 4px var(--positiveShadow);
 }
 
 #menu {

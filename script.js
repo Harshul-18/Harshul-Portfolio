@@ -56,7 +56,7 @@ const colorSchemes = {
         "--positiveShadow1": "#4000ff",
         "--positiveShadow": "#000000d9",
         "--positiveProjectShadow": "#000000d9",
-        "--negativeShadow": "#a600ff00",
+        "--negativeShadow": "#b300ff6a",
         "--topLeftBG": "#130033",
         "--bottomRightBG": "#a600ff",
         "--darkShadow": "#ff00ea",
@@ -120,3 +120,48 @@ if (isDeleting && currentCharIndex === 0) {
 
 type();
   
+
+const pythonSkills = [
+    "DS & Algorithms",
+    "Numpy",
+    "Pandas",
+    "Matplotlib",
+    "Streamlit",
+    "Tensorflow",
+];
+
+// let currentIndex = 0;
+// let currentCharIndex = 0;
+// let isDeleting = false;
+
+// const typingText = document.querySelector('.typing-text');
+
+// function type() {
+// if (isDeleting) {
+//     if (currentCharIndex > 0) {
+//     currentCharIndex--;
+//     typingText.textContent = points[currentIndex].substr(0, currentCharIndex);
+//     } else {
+//     isDeleting = false;
+//     }
+// } else {
+//     if (currentCharIndex < points[currentIndex].length) {
+//     currentCharIndex++;
+//     typingText.textContent = points[currentIndex].substr(0, currentCharIndex);
+//     } else {
+//     setTimeout(() => {
+//         isDeleting = true;
+//     }, 2000);
+//     }
+// }
+
+// setTimeout(() => {
+//     type();
+// }, isDeleting ? 10 : 40);
+
+// if (isDeleting && currentCharIndex === 0) {
+//     currentIndex = (currentIndex + 1) % points.length;
+// }
+// }
+
+// type();
