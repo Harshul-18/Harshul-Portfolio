@@ -25,6 +25,7 @@ const colorSchemes = {
         "--bottomRightBG": "#d20043",
         "--darkShadow": "#ffb744",
         "--border": "rgb(255, 0, 55)",
+        "--imgBorder": "rgb(255, 0, 55)",
         "--headerImage": "url('bg_4.png')",
     },
     scheme1: {
@@ -37,6 +38,7 @@ const colorSchemes = {
         "--bottomRightBG": "#1363d3",
         "--darkShadow": "#009dff",
         "--border": "rgb(0, 102, 255)",
+        "--imgBorder": "rgb(0, 0, 0)",
         "--headerImage": "url('bg_3.png')",
     },
     scheme2: {
@@ -49,6 +51,7 @@ const colorSchemes = {
         "--bottomRightBG": "#98d900",
         "--darkShadow": "#88ff00",
         "--border": "rgba(47, 255, 0, 0.742)",
+        "--imgBorder": "rgba(47, 255, 0, 0.742)",
         "--headerImage": "url('bg_2.png')"
     },
     scheme3: {
@@ -61,6 +64,7 @@ const colorSchemes = {
         "--bottomRightBG": "#a600ff",
         "--darkShadow": "#ff00ea",
         "--border": "rgb(0, 242, 255)",
+        "--imgBorder": "rgb(0, 242, 255)",
         "--headerImage": "url('bg_1.png')"
     },
 };

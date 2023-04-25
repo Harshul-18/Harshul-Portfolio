@@ -10,6 +10,7 @@
     --bottomRightBG: #1363d3;
     --darkShadow: #009dff;
     --border: rgb(0, 102, 255);
+    --imgBorder: rgb(0, 0, 0);
     --headerImage: url('bg_3.png');
 }
 
@@ -455,7 +456,7 @@ footer {
     height: 450px;
     /* width: 400px; */
     overflow: hidden;
-    border: 3px solid var(--border);
+    border: 3px solid var(--imgBorder);
     border-radius: 12px;
     box-shadow: 10px 10px 15px var(--positiveProjectShadow), -10px -10px 17px var(--negativeShadow);
     position: relative;
