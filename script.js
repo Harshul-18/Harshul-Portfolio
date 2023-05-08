@@ -10,6 +10,13 @@ $(document).ready(function(){
         $('header').removeClass('toggle');
     });
 
+    $(document).click(function(event) {
+        if (!$(event.target).closest('header').length && !$(event.target).is('#menu')) {
+            $('#menu').removeClass('fa-times');
+            $('header').removeClass('toggle');
+        }
+    });
+
 });
 
 const colorSchemeSelect = document.getElementById('color-scheme');
