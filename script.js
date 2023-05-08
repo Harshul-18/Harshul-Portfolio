@@ -76,10 +76,18 @@ const colorSchemes = {
     },
 };
 
+const imagePaths = {
+    default: 'leaves-ember.png',
+    scheme1: 'leaves-azure.png', // azure
+    scheme2: 'leaves-verdant.png', // neon nights
+    scheme3: 'leaves-neon-nights.png',
+};
+
 colorSchemeSelect.addEventListener('change', (e) => {
     const selectedScheme = e.target.value;
     const root = document.documentElement;
     const scheme = colorSchemes[selectedScheme];
+    document.getElementById('leaves').src = imagePaths[selectedScheme];
 
     for (const key in scheme) {
         root.style.setProperty(key, scheme[key]);
