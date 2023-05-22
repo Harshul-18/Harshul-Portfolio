@@ -3,16 +3,30 @@
 :root {
     --purple: #00580a;
     --positiveShadow1: #4000ff;
-    --positiveShadow: #0000009f;
-    --positiveProjectShadow: #0000009f;
-    --negativeShadow: #0040ffbe;
-    --topLeftBG: #090033;
-    --bottomRightBG: #1363d3;
-    --darkShadow: #009dff;
-    --border: rgb(0, 102, 255);
-    --imgBorder: rgb(0, 0, 0);
-    --headerImage: url('bg_3.png');
+    --positiveShadow: #000000d9;
+    --positiveProjectShadow: #000000d9;
+    --negativeShadow: #de0059be;
+    --topLeftBG: #330000;
+    --bottomRightBG: #d20043;
+    --darkShadow: #ffb744;
+    --border: rgb(255, 0, 55);
+    --imgBorder: rgb(255, 0, 55);
+    --headerImage: url('bg_4.png');
 }
+
+/* :root {
+    --purple: #00580a,
+    --positiveShadow1: #4000ff,
+    --positiveShadow: #000000d9,
+    --positiveProjectShadow: #000000d9,
+    --negativeShadow: #de0059be,
+    --topLeftBG: #330000,
+    --bottomRightBG: #d20043,
+    --darkShadow: #ffb744,
+    --border: rgb(255, 0, 55),
+    --imgBorder: rgb(255, 0, 55),
+    --headerImage: url('bg_4.png'),
+} */
 
 * {
     font-family: "Nunito", sans-serif;

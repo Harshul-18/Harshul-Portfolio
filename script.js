@@ -27,13 +27,13 @@ const colorSchemes = {
         "--positiveShadow1": "#4000ff",
         "--positiveShadow": "#000000d9",
         "--positiveProjectShadow": "#000000d9",
-        "--negativeShadow": "#de0059be",
-        "--topLeftBG": "#330000",
-        "--bottomRightBG": "#d20043",
-        "--darkShadow": "#ffb744",
-        "--border": "rgb(255, 0, 55)",
-        "--imgBorder": "rgb(255, 0, 55)",
-        "--headerImage": "url('bg_4.png')",
+        "--negativeShadow": "#b300ff6a",
+        "--topLeftBG": "#130033",
+        "--bottomRightBG": "#a600ff",
+        "--darkShadow": "#ff00ea",
+        "--border": "rgb(0, 242, 255)",
+        "--imgBorder": "rgb(0, 242, 255)",
+        "--headerImage": "url('bg_1.png')",
     },
     scheme1: {
         "--purple": "#00580a",
@@ -66,21 +66,21 @@ const colorSchemes = {
         "--positiveShadow1": "#4000ff",
         "--positiveShadow": "#000000d9",
         "--positiveProjectShadow": "#000000d9",
-        "--negativeShadow": "#b300ff6a",
-        "--topLeftBG": "#130033",
-        "--bottomRightBG": "#a600ff",
-        "--darkShadow": "#ff00ea",
-        "--border": "rgb(0, 242, 255)",
-        "--imgBorder": "rgb(0, 242, 255)",
-        "--headerImage": "url('bg_1.png')"
+        "--negativeShadow": "#de0059be",
+        "--topLeftBG": "#330000",
+        "--bottomRightBG": "#d20043",
+        "--darkShadow": "#ffb744",
+        "--border": "rgb(255, 0, 55)",
+        "--imgBorder": "rgb(255, 0, 55)",
+        "--headerImage": "url('bg_4.png')",
     },
 };
 
 const imagePaths = {
-    default: 'leaves-ember.png',
-    scheme1: 'leaves-azure.png', // azure
-    scheme2: 'leaves-verdant.png', // neon nights
-    scheme3: 'leaves-neon-nights.png',
+    default: 'leaves-neon-nights.png',
+    scheme1: 'leaves-azure.png', 
+    scheme2: 'leaves-verdant.png', 
+    scheme3: 'leaves-ember.png',
 };
 
 colorSchemeSelect.addEventListener('change', (e) => {
