@@ -19,6 +19,38 @@ $(document).ready(function(){
 
 });
 
+// Obtain a reference to the audio element
+var audioElement = document.getElementById('myAudio');
+
+// Initialize a variable to store the last scrollY position
+var lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', function() {
+    // Calculate the change in scrollY
+    var delta = Math.abs(window.scrollY - lastScrollY);
+
+    // If the change in scrollY is greater than 100
+    if (delta > 100) {
+        // Play the audio (if it's not already playing)
+        if (audioElement.paused) {
+            audioElement.play();
+            // isPlaying = true;
+        }
+    } 
+    // else {
+    //     // Otherwise, pause the audio
+    //     if (!audioElement.paused) {
+    //         audioElement.pause();
+    //         audioElement.currentTime = 0;  // Optional: Set the audio time to the start
+    //         isPlaying = 
+    //     }
+    // }
+
+    // Update the last scrollY position
+    lastScrollY = window.scrollY;
+});
+
+
 const colorSchemeSelect = document.getElementById('color-scheme');
 
 const colorSchemes = {
